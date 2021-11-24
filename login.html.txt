@@ -1,0 +1,44 @@
+<html>
+  <head>
+  <title>LOGIN PAGE</title>
+<script>
+    function submit()
+{
+var u = document.getElementById("1").value;
+var p = document.getElementById("2").value;
+
+if(u=='')
+{
+alert("PLEASE ENTER USER NAME");
+}
+else if(p=='')
+{
+        alert("PLEASE ENTER PASSWORD");
+}
+else if(p.length<8)
+{
+alert("ENTER ATLEAST 8 CHARACTERS");
+}
+else
+{
+alert('THANK YOU :)');
+}
+}
+
+function reset()
+{
+document.getElementById("1").value="";
+document.getElementById("2").value="";
+}
+</script>
+  </head>
+<body>
+ User Name :<input type="text" name="Username" size="10" maxlength="50" id="1"></br></br>
+Password :<input type="password" name="Password" size="10" id="2"></br></br>
+         <input type="submit" value="Submit" onClick="submit()">
+<input type="reset" value="Reset" onclick="reset()">
+
+
+   
+  </body>
+  </html>
